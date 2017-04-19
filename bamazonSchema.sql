@@ -4,9 +4,9 @@ USE Bamazon;
 
 CREATE TABLE products(
   id INT NOT NULL AUTO_INCREMENT,
-  Product_Name VARCHAR(45) NOT NULL,
-  Department_Name VARCHAR(45) NOT NULL,
-  Price INT NOT NULL,
-  Stock_Quantity INT NOT NULL,
+  product_name VARCHAR(45) NOT NULL,
+  department_name VARCHAR(45) NOT NULL,
+  price DECIMAL(6,2) DEFAULT 0,
+  stock_quantity INT DEFAULT 0,
   PRIMARY KEY (id)
 );
